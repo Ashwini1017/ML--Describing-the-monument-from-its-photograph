@@ -14,19 +14,11 @@ venv/
 env/
 .venv/
 
-# Trained model files (large binaries)
-models/*.pkl
-
 # Uploaded images (user data)
 static/uploads/
 
 # Prediction history
 prediction_history.json
-
-# Local dataset archive
-archive/
-archive.zip
-*.zip
 
 # Reports / generated plots (optional to track)
 # reports/
