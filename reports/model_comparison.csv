@@ -1,0 +1,6 @@
+Model,Train Accuracy,Test Accuracy,Training Time (s)
+SVM (RBF),0.9995,0.7141,20.01
+Random Forest,0.9995,0.6727,2.93
+KNN,0.9995,0.6404,4.01
+Decision Tree,0.8555,0.3596,3.94
+Naive Bayes,0.6759,0.5657,5.35
