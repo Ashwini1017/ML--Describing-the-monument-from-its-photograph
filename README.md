@@ -2,9 +2,7 @@
 
 > **AI-Powered Indian Monument Recognition using Classical Machine Learning**
 
-A complete final-year ML project that identifies **24 Indian monuments** from photographs using traditional computer vision and machine learning — **no deep learning, no neural networks**.
-
----
+A complete final-year ML project that identifies **24 Indian monuments** from photographs using traditional computer vision and machine learning 
 
 ## 🏗 Project Structure
 
@@ -36,34 +34,6 @@ ml/
 └── README.md
 ```
 
----
-
-## ⚡ Quick Start
-
-### Step 1: Install dependencies
-```bash
-cd "C:\Users\Ashwini\OneDrive\Desktop\ml"
-pip install -r requirements.txt
-```
-
-### Step 2: Train the models
-```bash
-python src/train.py
-```
-This will:
-- Load all images from `archive/Indian-monuments/images/train/`
-- Extract HOG + Color + LBP + ORB features
-- Train SVM, Random Forest, KNN, Decision Tree, Naive Bayes
-- Save the best model to `models/`
-- Generate accuracy charts in `reports/`
-
-### Step 3: Run the Flask web app
-```bash
-python app.py
-```
-Open your browser at: **http://127.0.0.1:5000**
-
----
 
 ## 🔬 Feature Extraction Methods
 
@@ -219,15 +189,3 @@ After training, the following are saved:
 - **Matplotlib** — charts and visualizations
 - **Flask** — web backend and REST API
 - **Joblib** — model serialization
-
----
-
-## 📝 Notes for Academic Submission
-
-- ✅ Uses **only classical ML** (SVM, RF, KNN, DT, NB)
-- ✅ **No deep learning** (no CNN, LSTM, Transformers)
-- ✅ **No pre-trained models** (ImageNet, etc.)
-- ✅ Feature extraction: HOG, LBP, Color Histogram, ORB — all traditional methods
-- ✅ Complete modular code with proper comments
-- ✅ Web-based demo with Flask
-- ✅ Training generates evaluation reports and plots
