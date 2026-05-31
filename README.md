@@ -3,7 +3,7 @@ Team Members: Ashwini R, G Sahana, and K M Deepika
 
 > **AI-Powered Indian Monument Recognition using Classical Machine Learning**
 
-A complete final-year ML project that identifies **24 Indian monuments** from photographs using traditional computer vision and machine learning 
+ ML project that identifies **24 Indian monuments** from photographs using traditional computer vision and machine learning 
 
 ## 🏗 Project Structure
 
@@ -35,17 +35,6 @@ ml/
 └── README.md
 ```
 
-
-## 🔬 Feature Extraction Methods
-
-| Feature | Description | Captures |
-|---------|-------------|---------|
-| **HOG** | Histogram of Oriented Gradients | Edges, shapes |
-| **Color Histogram (HSV)** | H/S/V channel histograms | Color distribution |
-| **LBP** | Local Binary Patterns | Texture patterns |
-| **ORB Statistics** | Keypoint summary (mean, std, count) | Keypoint structure |
-
----
 
 ## 🤖 ML Algorithms
 
@@ -118,64 +107,6 @@ Image Upload → Preprocessing → Feature Extraction → ML Classifier → Info
 - **Save result** as JSON
 
 ---
-
-## 💻 API Reference
-
-### `POST /predict`
-Upload an image and get monument prediction.
-
-**Request**: `multipart/form-data` with field `image`
-
-**Response**:
-```json
-{
-  "success": true,
-  "monument_name": "Taj Mahal",
-  "location": "Agra, Uttar Pradesh, India",
-  "built_by": "Mughal Emperor Shah Jahan",
-  "year_built": "1632–1653",
-  "architecture": "Mughal Architecture",
-  "description": "...",
-  "fun_fact": "...",
-  "entry_fee": "₹50 (Indian), ₹1100 (Foreign)",
-  "timings": "Sunrise to Sunset",
-  "unesco": true,
-  "confidence": 87.42,
-  "top_predictions": [["Taj Mahal", 87.42], ["Humayun's Tomb", 6.1], ...],
-  "model_used": "SVM (RBF)",
-  "image_url": "/static/uploads/abc123.jpg"
-}
-```
-
-### `GET /history`
-Returns last 50 predictions as JSON array.
-
-### `POST /all_models`
-Run all 5 ML models and compare their predictions.
-
-### `GET /models_status`
-Check if models are trained.
-
----
-
-## 📊 Output Files
-
-After training, the following are saved:
-
-| File | Description |
-|------|-------------|
-| `models/best_model.pkl` | Best performing ML model |
-| `models/scaler.pkl` | Feature scaler |
-| `models/selector.pkl` | Feature selector |
-| `models/label_encoder.pkl` | Label encoder |
-| `models/SVM_RBF.pkl` | SVM model |
-| `models/Random_Forest.pkl` | RF model |
-| `models/KNN.pkl` | KNN model |
-| `models/Decision_Tree.pkl` | DT model |
-| `models/Naive_Bayes.pkl` | NB model |
-| `reports/confusion_matrix.png` | Confusion matrix heatmap |
-| `reports/model_comparison.png` | Accuracy bar chart |
-| `reports/model_comparison.csv` | Accuracy numbers CSV |
 
 ---
 
